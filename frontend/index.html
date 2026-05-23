@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelVault — Dynamic Gallery</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+<body>
+
+  <!-- ── NOISE TEXTURE OVERLAY ─────────────────────────── -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ── HEADER ────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">PixelVault</span>
+      </a>
+      <p class="header-tagline">Dynamic Portfolio Gallery</p>
+    </div>
+    <div class="header-glow" aria-hidden="true"></div>
+  </header>
+
+  <!-- ── HERO ──────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">Creative</span>
+        <span class="title-line accent">Projects</span>
+      </h1>
+      <p class="hero-sub">Explore work across Web, AI, Mobile & Python — fetched live from the backend.</p>
+    </div>
+    <div class="hero-stats" id="heroStats">
+      <div class="stat"><span class="stat-num" id="totalCount">—</span><span class="stat-label">Projects</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">Categories</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">2024</span><span class="stat-label">Year</span></div>
+    </div>
+  </section>
+
+  <!-- ── CONTROLS ──────────────────────────────────────── -->
+  <section class="controls-section">
+    <div class="controls-inner">
+
+      <!-- Search Bar -->
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search projects…"
+          autocomplete="off"
+        />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-wrap" role="group" aria-label="Category filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Web">Web</button>
+        <button class="filter-btn" data-category="AI">AI</button>
+        <button class="filter-btn" data-category="Mobile">Mobile</button>
+        <button class="filter-btn" data-category="Python">Python</button>
+      </div>
+
+      <!-- Layout Toggle -->
+      <div class="layout-toggle">
+        <button class="layout-btn active" id="gridBtn" aria-label="Grid layout" title="Grid View">
+          ⊞
+        </button>
+        <button class="layout-btn" id="masonryBtn" aria-label="Masonry layout" title="Masonry View">
+          ⊟
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Result count -->
+    <p class="result-info" id="resultInfo"></p>
+  </section>
+
+  <!-- ── GALLERY GRID ───────────────────────────────────── -->
+  <main class="gallery-section">
+    <!-- Skeleton loaders shown during fetch -->
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="skeleton-card" aria-hidden="true"></div>
+      <div class="skeleton-card" aria-hidden="true"></div>
+      <div class="skeleton-card" aria-hidden="true"></div>
+      <div class="skeleton-card" aria-hidden="true"></div>
+      <div class="skeleton-card" aria-hidden="true"></div>
+      <div class="skeleton-card" aria-hidden="true"></div>
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state hidden" id="emptyState">
+      <span class="empty-icon">◎</span>
+      <p>No projects found.</p>
+      <button class="btn-reset" id="resetBtn">Reset Filters</button>
+    </div>
+  </main>
+
+  <!-- ── LOAD MORE ──────────────────────────────────────── -->
+  <div class="load-more-wrap" id="loadMoreWrap">
+    <button class="btn-load-more" id="loadMoreBtn">Load More Projects</button>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>PixelVault Gallery · Powered by Node.js + Express · Data via JSON API</p>
+  </footer>
+
+  <!-- ── MODAL / LIGHTBOX ───────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div class="modal-img-wrap">
+        <img src="" alt="" id="modalImg" class="modal-img" loading="lazy" />
+        <div class="modal-img-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta">
+          <span class="modal-category" id="modalCategory"></span>
+          <span class="modal-date" id="modalDate"></span>
+        </div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BACK TO TOP ────────────────────────────────────── -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

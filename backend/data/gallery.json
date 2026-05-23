@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "E-Commerce Dashboard",
+      "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      "description": "A fully responsive admin dashboard with real-time analytics, sales charts, and inventory management built with React and Chart.js.",
+      "category": "Web",
+      "tags": ["React", "Dashboard", "Analytics"],
+      "created_at": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "title": "AI Image Generator",
+      "image_url": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+      "description": "Text-to-image generation platform powered by Stable Diffusion with custom fine-tuned models and a sleek gallery interface.",
+      "category": "AI",
+      "tags": ["Python", "Stable Diffusion", "Deep Learning"],
+      "created_at": "2024-02-03"
+    },
+    {
+      "id": 3,
+      "title": "FitTrack Mobile App",
+      "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      "description": "Cross-platform fitness tracking app with workout logging, nutrition tracking, and progress visualization using Flutter.",
+      "category": "Mobile",
+      "tags": ["Flutter", "Firebase", "Health"],
+      "created_at": "2024-02-20"
+    },
+    {
+      "id": 4,
+      "title": "Data Scraper Bot",
+      "image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+      "description": "Automated web scraping tool built with Python, BeautifulSoup and Selenium that exports structured data to CSV and JSON formats.",
+      "category": "Python",
+      "tags": ["Python", "Selenium", "BeautifulSoup"],
+      "created_at": "2024-03-05"
+    },
+    {
+      "id": 5,
+      "title": "Social Media Landing Page",
+      "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+      "description": "High-conversion landing page with smooth animations, gradient design, and integrated contact forms for a social media agency.",
+      "category": "Web",
+      "tags": ["HTML", "CSS", "GSAP"],
+      "created_at": "2024-03-18"
+    },
+    {
+      "id": 6,
+      "title": "ChatBot with NLP",
+      "image_url": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80",
+      "description": "Intelligent customer support chatbot using OpenAI GPT-4 API with context memory, sentiment analysis, and escalation logic.",
+      "category": "AI",
+      "tags": ["OpenAI", "Node.js", "NLP"],
+      "created_at": "2024-04-01"
+    },
+    {
+      "id": 7,
+      "title": "Food Delivery App",
+      "image_url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80",
+      "description": "React Native food ordering app with real-time GPS tracking, payment integration, and restaurant management portal.",
+      "category": "Mobile",
+      "tags": ["React Native", "Node.js", "Maps API"],
+      "created_at": "2024-04-15"
+    },
+    {
+      "id": 8,
+      "title": "Stock Price Predictor",
+      "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+      "description": "ML model using LSTM neural networks trained on 10 years of stock data with interactive prediction charts and backtesting.",
+      "category": "Python",
+      "tags": ["TensorFlow", "Pandas", "LSTM"],
+      "created_at": "2024-05-02"
+    },
+    {
+      "id": 9,
+      "title": "Portfolio Website",
+      "image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      "description": "Minimalist developer portfolio with dark mode, smooth page transitions, project showcases, and an animated hero section.",
+      "category": "Web",
+      "tags": ["Vue.js", "Three.js", "GSAP"],
+      "created_at": "2024-05-20"
+    },
+    {
+      "id": 10,
+      "title": "Object Detection System",
+      "image_url": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&q=80",
+      "description": "Real-time object detection using YOLOv8 with a webcam feed, custom-trained models for security surveillance applications.",
+      "category": "AI",
+      "tags": ["YOLOv8", "OpenCV", "PyTorch"],
+      "created_at": "2024-06-08"
+    },
+    {
+      "id": 11,
+      "title": "Expense Tracker App",
+      "image_url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      "description": "Personal finance mobile app with budget planning, bill reminders, currency conversion, and beautiful spending charts.",
+      "category": "Mobile",
+      "tags": ["Swift", "CoreData", "Charts"],
+      "created_at": "2024-06-25"
+    },
+    {
+      "id": 12,
+      "title": "PDF Automation Tool",
+      "image_url": "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80",
+      "description": "Python script that auto-generates branded PDF reports from Excel data using ReportLab with charts, tables, and company branding.",
+      "category": "Python",
+      "tags": ["Python", "ReportLab", "Pandas"],
+      "created_at": "2024-07-10"
+    },
+    {
+      "id": 13,
+      "title": "Real Estate Website",
+      "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+      "description": "Property listing platform with advanced search filters, virtual tour integration, mortgage calculator, and agent profiles.",
+      "category": "Web",
+      "tags": ["Next.js", "PostgreSQL", "Mapbox"],
+      "created_at": "2024-07-28"
+    },
+    {
+      "id": 14,
+      "title": "Sentiment Analyzer",
+      "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+      "description": "Social media sentiment analysis dashboard that processes Twitter/X data in real time and visualizes public opinion trends.",
+      "category": "AI",
+      "tags": ["BERT", "FastAPI", "D3.js"],
+      "created_at": "2024-08-14"
+    },
+    {
+      "id": 15,
+      "title": "Music Streaming App",
+      "image_url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80",
+      "description": "Spotify-like mobile music player with offline downloads, personalized recommendations, podcast support, and audio visualizer.",
+      "category": "Mobile",
+      "tags": ["Kotlin", "Room DB", "ExoPlayer"],
+      "created_at": "2024-08-30"
+    },
+    {
+      "id": 16,
+      "title": "Telegram Bot Framework",
+      "image_url": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80",
+      "description": "Modular Telegram bot framework with command handlers, inline keyboards, database integration, and webhook deployment.",
+      "category": "Python",
+      "tags": ["python-telegram-bot", "SQLite", "Webhooks"],
+      "created_at": "2024-09-12"
+    },
+    {
+      "id": 17,
+      "title": "Blog CMS Platform",
+      "image_url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
+      "description": "Full-featured content management system with markdown editor, SEO tools, comment system, and multi-author support.",
+      "category": "Web",
+      "tags": ["Laravel", "MySQL", "Alpine.js"],
+      "created_at": "2024-09-28"
+    },
+    {
+      "id": 18,
+      "title": "Face Recognition Attendance",
+      "image_url": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
+      "description": "Automated attendance system using face recognition with a live camera feed, database logging, and exportable reports.",
+      "category": "AI",
+      "tags": ["face_recognition", "OpenCV", "Flask"],
+      "created_at": "2024-10-15"
+    },
+    {
+      "id": 19,
+      "title": "AR Shopping App",
+      "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80",
+      "description": "Augmented reality mobile app that lets users virtually try on clothes and place furniture in their room before purchasing.",
+      "category": "Mobile",
+      "tags": ["ARKit", "SceneKit", "iOS"],
+      "created_at": "2024-11-01"
+    },
+    {
+      "id": 20,
+      "title": "API Testing Dashboard",
+      "image_url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+      "description": "Internal developer tool for testing REST APIs with environment variables, request history, response diffing, and team sharing.",
+      "category": "Python",
+      "tags": ["FastAPI", "React", "PostgreSQL"],
+      "created_at": "2024-11-18"
+    }
+  ]
+}
